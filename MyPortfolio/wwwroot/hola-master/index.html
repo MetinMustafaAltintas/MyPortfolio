@@ -1,8 +1,3 @@
-﻿
-@{
-    Layout = null;
-}
-
 <!DOCTYPE html>
 <!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
 <!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
@@ -10,7 +5,36 @@
 <html class="no-js" lang="en">
 <!--<![endif]-->
 
-@await Component.InvokeAsync("_HeadComponentPartial");
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Hola</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
 
 <body id="top">
 
@@ -100,7 +124,7 @@
     <!-- about
     ================================================== -->
     <section id="about" class="s-about target-section">
-
+        
         <div class="row narrow section-intro has-bottom-sep">
             <div class="col-full text-center">
                 <h3>About</h3>
@@ -234,7 +258,7 @@
         </div> <!-- end about-content timeline -->
 
     </section> <!-- end about -->
-
+    
 
     <!-- works
     ================================================== -->
@@ -244,7 +268,7 @@
             <div class="col-full">
                 <h3>Portfolio</h3>
                 <h1>See My Latest Projects.</h1>
-
+                
                 <p class="lead">Lorem ipsum Dolor adipisicing nostrud et aute Excepteur amet commodo ea dolore irure esse Duis nulla sint fugiat cillum ullamco proident aliquip quis qui voluptate dolore veniam Ut laborum non est in officia.</p>
             </div>
         </div>
@@ -552,7 +576,7 @@
                         <span>CEO, Microsoft</span>
                     </div>
                 </div>
-
+                
             </div> <!-- end testimonials__slider -->
 
         </div> <!-- end testimonials -->
@@ -579,11 +603,11 @@
 
                 <div class="blog-list block-1-2 block-tab-full">
                     <article class="col-block">
-
+                                
                         <div class="blog-date">
                             <a href="blog-single.html">Sept 16, 2017</a>
                         </div>  
-
+                        
                         <h2 class="h01"><a href="blog-single.html">The 10 Golden Rules of Clean Simple Design.</a></h2>
                         <p>
                         Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Donec sollicitudin molestie malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh..
@@ -593,14 +617,14 @@
                                 <a href="blog.html">Branding</a><a href="blog.html">Design</a>
                         </div>
 
-
+                        
                     </article>
                     <article class="col-block">
-
+                                
                         <div class="blog-date">
                             <a href="blog-single.html">Sept 15, 2017</a>
                         </div>  
-
+                        
                         <h2 class="h01"><a href="blog-single.html">Photography Can Improve Your Graphic Design.</a></h2>
                         <p>
                         Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Donec sollicitudin molestie malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh..
@@ -610,10 +634,10 @@
                             <a href="blog.html">Photography</a>
                         </div>
 
-
+                        
                     </article>
                     <article class="col-block">
-
+                        
                         <div class="blog-date">
                             <a href="blog-single.html">Sept 14, 2017</a>
                         </div>
@@ -628,7 +652,7 @@
                         </div>
                     </article>
                     <article class="col-block">
-
+                        
                         <div class="blog-date">
                             <a href="blog-single.html">Sept 12, 2017</a>
                         </div>    
@@ -652,7 +676,7 @@
     <!-- s-cta
     ================================================== -->
     <section class="s-cta">
-
+        
         <div class="row narrow cta">
 
             <div class="col-full cta__content">
@@ -671,7 +695,7 @@
             </div>
 
         </div> <!-- end cta -->
-
+        
     </section>
 
 
@@ -722,7 +746,7 @@
             <div class="col-full">
                 <h3>Contact</h3>
                 <h1>Say Hello.</h1>
-
+                
                 <p class="lead">Lorem ipsum Dolor adipisicing nostrud et aute Excepteur amet commodo ea dolore irure esse Duis nulla sint fugiat cillum ullamco proident aliquip quis qui voluptate dolore veniam Ut laborum non est in officia.</p>
             </div>
         </div>
@@ -731,7 +755,7 @@
             <div class="col-eight tab-full contact__form">
                 <form name="contactForm" id="contactForm" method="post" action="">
                     <fieldset>
-
+    
                     <div class="form-field">
                         <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="" aria-required="true" class="full-width">
                     </div>
@@ -755,7 +779,7 @@
                             </div>
                         </div>
                     </div>
-
+    
                     </fieldset>
                 </form>
 
@@ -763,12 +787,12 @@
                 <div class="message-warning">
                     Something went wrong. Please try again.
                 </div> 
-
+            
                 <!-- contact-success -->
                 <div class="message-success">
                     Your message was sent, thank you!<br>
                 </div>
-
+                        
             </div>
             <div class="col-four tab-full contact__infos">
                 <h4 class="h06">Phone</h4>
@@ -827,7 +851,7 @@
                         <span>Pinterest</span>
                     </a></li>
                 </ul>
-
+                    
             </div>
         </div>
 
@@ -895,9 +919,9 @@
 
     <!-- Java Script
     ================================================== -->
-    <script src="~/hola-master/js/jquery-3.2.1.min.js"></script>
-    <script src="~/hola-master/js/plugins.js"></script>
-    <script src="~/hola-master/js/main.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 
