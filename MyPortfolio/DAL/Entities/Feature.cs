@@ -1,8 +1,8 @@
 ﻿namespace MyPortfolio.DAL.Entities
 {
-    public class Feture
+    public class Feature
     {
-        public int FetureId { get; set; }
+        public int FeatureId { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
     }
